@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Badge Generator</title>
+      <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+<body>
+    <div class="mainheader" >
+        <img class="logo" src="img/imi_logo.png" alt="imi_logo">
+        <div class="hd"> Health Declaration System</div>
+    </div>
+    
+    <div class="header"> <div id="badge">Badge</div></div>
+    
+    <div class="form">Fill out this form <br> <small style="color:rgb(161, 33, 33); font: 12px sans-serif; font-weight: bold;">Important Format!  |LAST NAME, FIRST NAME | MM/DD/YYYY</small> </br>
+        <input type="text" id="idNumber" placeholder="Employe ID ">
+        <input type="text" id="name" placeholder="Enter your name ">
+     <div class="formin">
+            <select id="shuttlein" placeholder="Incoming shuttle ">
+                <option value="Shuttle">Incoming Shuttle</option>
+                <option value="IMI BALIBAGO">IMI BALIBAGO</option>
+                <option value="IMI CABUYAO">IMI CABUYAO</option>
+                <option value="IMI ALABANG">IMI ALABANG</option>
+                <option value="IMI PACITA">IMI PACITA</option>
+                <option value="IMI CALAMBA">IMI CALAMBA</option>
+                <option value="STA ROSA">STA ROSA</option>
+                <option value="STO TOMAS">STO TOMAS</option>
+                <option value="IMI CARMONA">IMI CARMONA</option>
+            </select>
+            <input type="text" id="indate" placeholder="MM/DD/YYYY">
+            <select name="time" id="intime">
+                <option value="06:00 AM">Select time</option>
+                <option value="06:00 AM">06:00 AM</option>
+                <option value="08:00 AM">08:00 AM</option>
+                <option value="02:00 PM">02:00 PM</option>
+                <option value="06:00 PM">06:00 PM</option>
+                <option value="10:00 PM">10:00 PM</option>
+            </select>
+        </div>
+        <div class="formout">
+            <select id="shuttleout" placeholder="Outgoing shuttle ">
+                <option value="Shuttle">Outgoing Shuttle</option>
+                <option value="IMI BALIBAGO">IMI BALIBAGO</option>
+                <option value="IMI CABUYAO">IMI CABUYAO</option>
+                <option value="IMI ALABANG">IMI ALABANG</option>
+                <option value="IMI PACITA">IMI PACITA</option>
+                <option value="IMI CALAMBA">IMI CALAMBA</option>
+                <option value="STA ROSA">STA ROSA</option>
+                <option value="STO TOMAS">STO TOMAS</option>
+                <option value="IMI CARMONA">IMI CARMONA</option>
+            </select>
+            <input type="text" id="outdate" placeholder="MM/DD/YYYY">
+            <select name="time" id="outtime">
+                <option value="06:00 AM">Select time</option>
+                <option value="06:00 AM">06:00 AM</option>
+                <option value="08:00 AM">08:00 AM</option>
+                <option value="02:00 PM">02:00 PM</option>
+                <option value="06:00 PM">06:00 PM</option>
+                <option value="10:00 PM">10:00 PM</option>
+            </select>
+            </div>
+        <button type="button" id="myButton">Generate Badge</button>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <img class="bakunado" src="img/bakunado.png" alt="bakunado">
+            <div class="enname">
+                <span id="Eid">480393838383</span> 
+                </br>
+                <span id="Ename">Your Name</span>
+            </div>
+            <img class="qr" src="img/qr.png" alt="Qr">
+            <div class="trans">
+                <div class="incoming">INCOMING</div>
+                <div class="in">
+                    </br>
+                    <span class="inroute" id="inroute">IMI BALIBAGO</span>
+                    </br>
+                        <div class="iintime"><span class="inroutetime" id="datein">09/22/2022</span> <span id="timein">06:00 AM</span></div>
+                </div>
+               <div class="outgoing">OUTGOING</div>
+               <div class="out"> 
+                    </br>
+                     <span class="outroute" id="outroute">IMI BALIBAGO</span>
+                    </br>
+                        <div class="oouttime"><span class="outroutetime" id="dateout">09/22/2022</span> <span id="timeout">06:00 AM</span></div>
+                </div>
+            </div>
+            <div class="health">You may visit your Health Declaration here</div>
+        </div>
+        
+    </div>
+    </br>
+    <footer class="footer">Copyright © 2022 | Integrated Micro-Electronics, Inc. | All rights reserved</footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
